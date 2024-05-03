@@ -1,0 +1,17 @@
+# Debian
+# FROM mcr.microsoft.com/dotnet/sdk:6.0
+
+# Alpine
+FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine
+
+WORKDIR /app
+
+COPY doctrack .
+COPY doctrack_template.docx .
+
+RUN dotnet publish -r linux-x64 -c Release -o /app/publish /p:PublishSingleFile=true
+# RUN dotnet publish -r linux-x64 -c Release /p:PublishSingleFile=true
+
+
+# CMD ["node", "index.js"]
+CMD ["tail", "-f", "/dev/null"]

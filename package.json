@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "docx": "^8.5.0",
+    "jszip": "^3.10.1",
+    "officegen": "^0.6.5",
+    "officeprops": "^1.1.5",
+    "sharp": "^0.33.3",
+    "xml2js": "^0.6.2"
+  }
+}

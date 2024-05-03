@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<x:workbook xmlns:loext="http://schemas.libreoffice.org/"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:x="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <x:fileVersion appName="Calc" />
+  <x:workbookPr date1904="false" showObjects="all" backupFile="false" />
+  <x:workbookProtection />
+  <x:bookViews>
+    <x:workbookView showHorizontalScroll="true" showVerticalScroll="true" showSheetTabs="true"
+      xWindow="0" yWindow="0" windowWidth="16384" windowHeight="8192" tabRatio="500" firstSheet="0"
+      activeTab="0" />
+  </x:bookViews>
+  <x:sheets>
+    <x:sheet name="Sheet1" sheetId="1" state="visible" r:id="rId2" />
+  </x:sheets>
+  <x:calcPr refMode="A1" iterate="false" iterateCount="100" iterateDelta="0.001" />
+  <x:extLst>
+    <x:ext xmlns:loext="http://schemas.libreoffice.org/"
+      uri="{7626C862-2A13-11E5-B345-FEFF819CDC9F}">
+      <loext:extCalcPr stringRefSyntax="CalcA1"></loext:extCalcPr>
+    </x:ext>
+  </x:extLst>
+</x:workbook>

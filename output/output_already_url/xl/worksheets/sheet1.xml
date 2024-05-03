@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<x:worksheet xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing"
+  xmlns:x14="http://schemas.microsoft.com/office/spreadsheetml/2009/9/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:x="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <x:sheetPr filterMode="false">
+    <x:pageSetUpPr fitToPage="false" />
+  </x:sheetPr>
+  <x:dimension ref="A1:C3" />
+  <x:sheetViews>
+    <x:sheetView showFormulas="false" showGridLines="true" showRowColHeaders="true" showZeros="true"
+      rightToLeft="false" tabSelected="true" showOutlineSymbols="true" defaultGridColor="true"
+      view="normal" topLeftCell="A1" colorId="64" zoomScale="100" zoomScaleNormal="100"
+      zoomScalePageLayoutView="100" workbookViewId="0">
+      <x:selection pane="topLeft" activeCell="B5" activeCellId="0" sqref="B5" />
+    </x:sheetView>
+  </x:sheetViews>
+  <x:sheetFormatPr defaultColWidth="11.55078125" defaultRowHeight="12.8" zeroHeight="false"
+    outlineLevelRow="0" outlineLevelCol="0"></x:sheetFormatPr>
+  <x:sheetData>
+    <x:row r="1" customFormat="false" ht="12.8" hidden="false" customHeight="false" outlineLevel="0"
+      collapsed="false">
+      <x:c r="A1" s="1" t="s">
+        <x:v>0</x:v>
+      </x:c>
+      <x:c r="C1" s="2" t="s">
+        <x:v>1</x:v>
+      </x:c>
+    </x:row>
+    <x:row r="3" customFormat="false" ht="12.8" hidden="false" customHeight="false" outlineLevel="0"
+      collapsed="false">
+      <x:c r="A3" s="0" t="s">
+        <x:v>2</x:v>
+      </x:c>
+    </x:row>
+  </x:sheetData>
+  <x:printOptions horizontalCentered="false" verticalCentered="false" headings="false"
+    gridLines="false" gridLinesSet="true" />
+  <x:pageMargins left="0.7875" right="0.7875" top="1.05277777777778" bottom="1.05277777777778"
+    header="0.7875" footer="0.7875" />
+  <x:pageSetup paperSize="9" scale="100" firstPageNumber="1" fitToWidth="1" fitToHeight="1"
+    pageOrder="downThenOver" orientation="portrait" blackAndWhite="false" draft="false"
+    cellComments="none" useFirstPageNumber="true" horizontalDpi="300" verticalDpi="300" copies="1" />
+  <x:headerFooter differentOddEven="false" differentFirst="false">
+    <x:oddHeader>&amp;C&amp;"Times New Roman,Regular"&amp;12&amp;A</x:oddHeader>
+    <x:oddFooter>&amp;C&amp;"Times New Roman,Regular"&amp;12Page &amp;P</x:oddFooter>
+  </x:headerFooter>
+  <x:drawing r:id="Rfd91028ab62d4c1f" />
+</x:worksheet>
