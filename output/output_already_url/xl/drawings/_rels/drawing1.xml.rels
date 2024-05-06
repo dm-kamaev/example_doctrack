@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
-  <Relationship Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
-    Target="http://localhost:5001/image.png" TargetMode="External" Id="R2a1e3cbebe84420c" />
-  <Relationship Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
-    Target="http://localhost:5001/image2.png" TargetMode="External" Id="R9f9fbb8730854b47" />
-</Relationships>

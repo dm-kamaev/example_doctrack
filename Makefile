@@ -23,7 +23,7 @@ doctrack_and_save_to_file:
 		-v /Start/example_doctrack/input:/app/input \
 		--network=cc0 \
 		-it example_doctrack sh -c \
-		"./doctrack -i input/test_already_url.xlsx -o output/output_already_url.xlsx --url http://localhost:5001/image2.png;";
+		"./doctrack -i input/test.docx -o output/output.docx --url http://localhost:5001/image.png;";
 	sudo chown -R dkamaev:dkamaev output;
 	sudo chmod -R 0777 output;
 

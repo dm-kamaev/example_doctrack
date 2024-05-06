@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<w:document xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  xmlns:w10="urn:schemas-microsoft-com:office:word"
+  xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+  xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+  xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+  xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+  xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" mc:Ignorable="w14 wp14 w15">
+  <w:body>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal" />
+        <w:bidi w:val="0" />
+        <w:jc w:val="center" />
+        <w:rPr>
+          <w:b />
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="42" />
+          <w:szCs w:val="42" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="42" />
+          <w:szCs w:val="42" />
+        </w:rPr>
+        <w:t>Пример для doctrack</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal" />
+        <w:bidi w:val="0" />
+        <w:jc w:val="center" />
+        <w:rPr>
+          <w:b />
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="42" />
+          <w:szCs w:val="42" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="42" />
+          <w:szCs w:val="42" />
+        </w:rPr>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal" />
+        <w:bidi w:val="0" />
+        <w:jc w:val="center" />
+        <w:rPr>
+          <w:b />
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="42" />
+          <w:szCs w:val="42" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="42" />
+          <w:szCs w:val="42" />
+        </w:rPr>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal" />
+        <w:bidi w:val="0" />
+        <w:jc w:val="center" />
+        <w:rPr>
+          <w:b />
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="36" />
+          <w:szCs w:val="36" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="36" />
+          <w:szCs w:val="36" />
+        </w:rPr>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Normal" />
+        <w:bidi w:val="0" />
+        <w:jc w:val="left" />
+        <w:rPr>
+          <w:b />
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="36" />
+          <w:szCs w:val="36" />
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b w:val="false" />
+          <w:bCs w:val="false" />
+          <w:sz w:val="36" />
+          <w:szCs w:val="36" />
+        </w:rPr>
+        <w:t xml:space="preserve">Lorem ipsum hello world </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b />
+          <w:bCs />
+          <w:sz w:val="36" />
+          <w:szCs w:val="36" />
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr>
+      <w:type w:val="nextPage" />
+      <w:pgSz w:w="11906" w:h="16838" />
+      <w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134" w:header="0" w:footer="0"
+        w:gutter="0" />
+      <w:pgNumType w:fmt="decimal" />
+      <w:formProt w:val="false" />
+      <w:textDirection w:val="lrTb" />
+    </w:sectPr>
+    <w:p>
+      <w:r>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="0" distR="0">
+            <wp:extent cx="0" cy="0" />
+            <wp:effectExtent l="0" t="0" r="0" b="0" />
+            <wp:docPr id="1" name="c420c564-46e0-4119-92c0-dc9a5c0f1b7f" />
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks noChangeAspect="1"
+                xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" />
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="1" name="c420c564-46e0-4119-92c0-dc9a5c0f1b7f" />
+                    <pic:cNvPicPr />
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:link="R5dba14f648b3440f" cstate="print">
+                      <a:extLst>
+                        <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}" />
+                      </a:extLst>
+                    </a:blip>
+                    <a:stretch>
+                      <a:fillRect />
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0" />
+                      <a:ext cx="0" cy="0" />
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst />
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+  </w:body>
+</w:document>

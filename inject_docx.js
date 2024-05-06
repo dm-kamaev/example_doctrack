@@ -1,3 +1,5 @@
+// Inject tracking pixel url in document. Support formats: .docx, .docm, .dotx. Node js realization of c# realization https://github.com/wavvs/doctrack
+
 'use strict';
 
 const { randomUUID } = require('node:crypto');
@@ -5,12 +7,16 @@ const fs = require('node:fs/promises');
 const JSZip = require('jszip');
 const xml2js = require('xml2js');
 
-// const inputFile = './test.docx';
+const inputFile = './test.docx';
+// const inputFile = './test_dotx.dotx';
+// const inputFile = './empty.docx';
 // const inputFile = './test_with_image.docx';
-const inputFile = './output.docx';
-const outputFile = './output2.docx';
-// const imageUrl = 'http://localhost:5001/image.png';
-const imageUrl = 'http://localhost:5001/image2.png';
+// const inputFile = './manual_result.docx';
+// const inputFile = './output.docx';
+// const outputFile = './manual_result.dotx';
+const outputFile = './output.docx';
+const imageUrl = 'http://localhost:5001/image.png';
+// const imageUrl = 'http://localhost:5001/image2.png';
 
 appendImageToDocx(inputFile, outputFile, imageUrl).catch(console.error);
 
@@ -26,12 +32,12 @@ async function appendImageToDocx(inputPath, outputPath, imageUrl) {
 
     const [relsXml, docXml] = await Promise.all([
         zip.file(relsPath).async('string'),
-        zip.file(docPath).async('string')
+        zip.file(docPath).async('string'),
     ]);
 
     const [relsObj, docObj] = await Promise.all([
         parser.parseStringPromise(relsXml),
-        parser.parseStringPromise(docXml)
+        parser.parseStringPromise(docXml),
     ]);
 
     const lastId = relsObj.Relationships.Relationship.length;
@@ -49,10 +55,12 @@ async function appendImageToDocx(inputPath, outputPath, imageUrl) {
     const newRelsXml = builder.buildObject(relsObj);
     zip.file(relsPath, newRelsXml);
 
+    // console.dir(docObj['w:document']['w:body'], { depth: 3 });
+
     const pictureName = randomUUID(); // 08f13379-b480-4b66-81d9-a4d3d9d45743
+
     // New paragraph with blank draw
-    const drawing = {
-        'w:p': [{
+      const drawing = {
             'w:r': [{
                 'w:drawing': [{
                     'wp:inline': [{
@@ -157,17 +165,21 @@ async function appendImageToDocx(inputPath, outputPath, imageUrl) {
                     }]
                 }]
             }]
-        }]
     };
 
+
     if (!docObj['w:document']['w:body']) {
-        docObj['w:document']['w:body'] = [];
+        console.log('Initiazation!');
+        docObj['w:document']['w:body'] = [{ 'w:p': [] }];
     }
 
-    docObj['w:document']['w:body'].push(drawing);
+    const wBody = docObj['w:document']['w:body'];
+    wBody[0]['w:p'].push(drawing);
 
-    const newDocXml = builder.buildObject(docObj);
-    zip.file(docPath, newDocXml);
+    // console.dir(docObj['w:document']['w:body'], { depth: 3 });
+
+    zip.file(docPath, builder.buildObject(docObj));
+
 
     const buffer = await zip.generateAsync({ type: 'nodebuffer' });
     await fs.writeFile(outputPath, buffer);

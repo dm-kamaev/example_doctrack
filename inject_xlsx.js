@@ -1,3 +1,5 @@
+// Inject tracking pixel url in document. Support formats: .xlsx, .xlsm, .xltx. Node js realization of c# realization https://github.com/wavvs/doctrack
+
 'use strict';
 
 const { randomUUID } = require('node:crypto');
@@ -5,10 +7,13 @@ const fs = require('node:fs/promises');
 const JSZip = require('jszip');
 const xml2js = require('xml2js');
 
-const inputFile = './empty.xlsx';
+
+// const inputFile = './empty.xlsx';
+const inputFile = './test_xltx.xltx';
 // const inputFile = './test_with_image.xlsx';
 // const inputFile = './manual_result.xlsx';
-const outputFile = './manual_result.xlsx';
+// const outputFile = './manual_result.xlsx';
+const outputFile = './manual_result.xltx';
 const imageUrl = 'http://localhost:5001/image.png';
 // const imageUrl = 'http://localhost:5001/image2.png';
 
@@ -23,13 +28,10 @@ async function appendImageUrlToExcelWithNewSheetRels(inputPath, outputPath, imag
   const builder = new xml2js.Builder();
 
   const hasNotDrawingForSheet1 = !Boolean(zip.file('xl/drawings/drawing1.xml'));
-  console.log(zip.file('xl/drawings/drawing1.xml'));
 
   const { rId: imageUrlRId, filePath: drawingPath } = await appendBlankDrawing({ zip, parser, builder });
   await appendRelationshipBetweenDrawingAndImage({ zip, parser, builder, drawingPath, image: { rId: imageUrlRId, url: imageUrl } });
 
-  // const hasNotDrawingForSheet1 = true;
-  console.log({ hasNotDrawingForSheet1 });
   if (hasNotDrawingForSheet1) {
     const drawingRId = await appendDrawingsOnSheet({ zip, parser, builder });
     await appendRelationshipBetweenDrawingsAndSheet({ zip, parser, builder, drawing: { rId: drawingRId, path: drawingPath } });
